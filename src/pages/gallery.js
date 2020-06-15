@@ -52,8 +52,8 @@ const Gallery = () => {
       <div id="modal" class={showModal ? "d-block" : "d-none"}>
         <div class="container-fluid mt-5">
           <div class="row justify-content-center">
-            <div id="modal-image" class="col-10 col-lg-8">
-              <img src={modalImg} alt='modal'/>
+            <div id="modal-image" class="col-10 col-lg-6">
+              <img src={modalImg} class="img-fluid h-100" alt='modal'/>
               <button
                 id="modal-close"
                 onClick={() => {
