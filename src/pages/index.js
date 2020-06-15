@@ -11,7 +11,7 @@ const IndexPage = (props) => (
     <div className="container-fluid">
         <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
-                <Img fluid={props.data.imageOne.childImageSharp.fluid} className="img-fluid" />
+                <Img fluid={props.data.imageOne.childImageSharp.fluid} className="img-fluid mb-4" />
             </div>
         </div>
     </div>
