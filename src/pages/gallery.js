@@ -31,13 +31,13 @@ const Gallery = () => {
       <SEO title="Gallery" />
       <div class="container-fluid">
         <div class="row justify-content-center">
-          {images.map(image => (
+          {images.slice(0).reverse().map(image => (
             <div
               onClick={() => {
                 setShowModal(true)
                 setModalImg(image.featuredImage.sourceUrl)
               }}
-              class="col-lg-3 col-md-4 col-5 m-1"
+              class="col-lg-2 col-md-4 col-5 m-2"
               style={{
                 width: 100,
                 height: 250,

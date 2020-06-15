@@ -28,7 +28,7 @@ const MainMenu = () => {
         url: item.url.replace(url, "")
     }))
     return(
-        <nav className="navbar navbar-light navbar-expand-md">
+        <nav className="navbar navbar-light navbar-expand-md py-1">
             <Link to="/"><a className="navbar-brand">haley hussey</a></Link>
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar">
                <span class="icon-bar top-bar"></span>
@@ -38,7 +38,7 @@ const MainMenu = () => {
             <div className="collapse navbar-collapse justify-content-end" id="navbar">
             <ul className="navbar-nav text-center">
             {items.map(item => (
-                <li className="nav-item">
+                <li className="nav-item my-0">
                 <Link className="nav-link" to={item.url} key={item.id}>
                     {item.label.toLowerCase()}
                 </Link>
