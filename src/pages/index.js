@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <div className="container-fluid">
         <div className="row justify-content-center">
-            <div className="col-lg-8">
+            <div className="col-lg-8 text-center">
                 <img src={hero} className="img-fluid" />
             </div>
         </div>
