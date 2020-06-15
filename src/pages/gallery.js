@@ -52,7 +52,7 @@ const Gallery = () => {
       <div id="modal" class={showModal ? "d-block" : "d-none"}>
         <div class="container-fluid mt-5">
           <div class="row justify-content-center">
-            <div id="modal-image" class="col-10 col-lg-6">
+            <div id="modal-image" class="col-11 col-lg-7">
               <img src={modalImg} class="img-fluid" alt='modal'/>
               <button
                 id="modal-close"
