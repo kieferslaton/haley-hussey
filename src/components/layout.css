@@ -620,3 +620,150 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* New Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Lora', serif;
+  box-sizing: border-box;
+}
+
+.navbar{
+  border-bottom: 1px solid #b6b6b6;
+  font-weight: bold;
+}
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #B6b6b6;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none!important;
+}
+ 
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.fab{
+  color: #b6b6b6;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  margin: 0 20px;
+  padding: 8px 5px;
+  font-size: 1.8em;
+  border: 2px solid #b6b6b6;
+}
+
+.fab:hover, .fab:focus {
+  background-color: #b6b6b6;
+  color: white;
+}
+
+#hero {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+
+table {
+  border-left: 20px solid white;
+  border-right: 20px solid white;
+  font-size: 0.85em;
+  margin: 0 !important;
+}
+
+.table-head{
+  font-weight: bold;
+}
+
+td{
+  padding: 5px 8px;
+}
+
+#modal{
+  position: fixed;
+  z-index: top;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#modal-image{
+  position: relative;
+}
+
+#modal-close{
+  position: absolute;
+  top: -10px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  color: black;
+  border: 2px solid #b6b6b6;
+  background-color: white;
+  border-radius: 100px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.close-one, .close-two{
+  width: 23px;
+  height: 2px;
+  background-color: #b6b6b6;
+  display: block;
+}
+
+.close-one{
+  transform: rotate(45deg);
+  position: absolute;
+  top: 15px;
+  left: 4px;
+}
+
+.close-two{
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 15px;
+  left: 4px;
+}
+
