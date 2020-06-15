@@ -53,7 +53,7 @@ const Gallery = () => {
         <div class="container-fluid mt-5">
           <div class="row justify-content-center">
             <div id="modal-image" class="col-10 col-lg-6">
-              <img src={modalImg} class="img-fluid h-100" alt='modal'/>
+              <img src={modalImg} class="img-fluid" alt='modal'/>
               <button
                 id="modal-close"
                 onClick={() => {
