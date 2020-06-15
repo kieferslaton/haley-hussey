@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { IoIosCloseCircle } from "react-icons/io"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from '../components/seo'
 
 const Gallery = () => {
   const [showModal, setShowModal] = useState(false)
@@ -28,6 +28,7 @@ const Gallery = () => {
 
   return (
     <Layout>
+      <SEO title="Gallery" />
       <div class="container-fluid">
         <div class="row justify-content-center">
           {images.map(image => (
@@ -52,7 +53,7 @@ const Gallery = () => {
         <div class="container-fluid mt-5">
           <div class="row justify-content-center">
             <div id="modal-image" class="col-10 col-lg-8">
-              <img src={modalImg} />
+              <img src={modalImg} alt='modal'/>
               <button
                 id="modal-close"
                 onClick={() => {

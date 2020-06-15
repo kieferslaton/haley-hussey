@@ -7,7 +7,6 @@
 
 import React from "react"
 import { FaFacebookF, FaInstagram, FaYoutube} from 'react-icons/fa';
-import Header from "./header"
 import MainMenu from './main-menu'
 import "./layout.css"
 
