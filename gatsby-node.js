@@ -1,5 +1,4 @@
 exports.createPages = async({actions, graphql}) => {
-  actions.createRedirect({ fromPath:'/', toPath:'/home', redirectInBrowser: true, isPermanent: true})
   const result = await graphql(`
   {
     wpgraphql {

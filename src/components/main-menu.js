@@ -29,7 +29,7 @@ const MainMenu = () => {
     }))
     return(
         <nav className="navbar navbar-light navbar-expand-md">
-            <a className="navbar-brand" href="#">haley hussey</a>
+            <Link to="/"><a className="navbar-brand">haley hussey</a></Link>
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar">
                <span class="icon-bar top-bar"></span>
                <span class="icon-bar middle-bar"></span>
