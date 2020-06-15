@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import hero from '../images/hero.jpg'
+import hero from '../images/hero.png'
 
 const IndexPage = () => (
   <Layout>
