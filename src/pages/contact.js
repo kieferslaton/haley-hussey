@@ -14,11 +14,16 @@ function Contact() {
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [nameError, setNameError] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
 
     const { name, email, phone, message } = form
+
+    if(!name){
+      setNameError(true)
+    } else {
 
     let templateParams = {
       email: email,
@@ -45,6 +50,7 @@ function Contact() {
       function (error) {
       }
     )
+    }
   }
 
   const handleChange = e => {
@@ -75,13 +81,14 @@ function Contact() {
                       id="name"
                       placeholder="Name"
                     />
+                    <small className={nameError ? '' : 'd-none'}>Please enter a name.</small>
                   </div>
                 </div>
                 <div class="form-row justify-content-center">
                   <div className="form-group col-sm-10 col-md-8 col-lg-6">
                     <label for="email">Email:</label>
                     <input
-                      type="text"
+                      type="email"
                       className="form-control"
                       name="email"
                       onChange={handleChange}
@@ -95,7 +102,8 @@ function Contact() {
                   <div className="form-group col-sm-10 col-md-8 col-lg-6">
                     <label for="phone">Phone:</label>
                     <input
-                      type="text"
+                      type="tel"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                       className="form-control"
                       name="phone"
                       onChange={handleChange}
