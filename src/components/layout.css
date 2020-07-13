@@ -703,14 +703,15 @@ pre tt:after {
   width: 50px;
   border-radius: 100px;
   margin: 0 20px;
-  padding: 8px 5px;
-  font-size: 1.8em;
+  padding: 8px 0px;
+  font-size: 2em;
   border: 2px solid #b6b6b6;
 }
 
 .fab:hover, .fab:focus {
   background-color: #b6b6b6;
   color: white;
+  cursor: pointer;
 }
 
 #hero {
@@ -750,21 +751,20 @@ td{
 
 #modal-close{
   position: absolute;
-  top: -10px;
-  right: 0;
-  height: 35px;
-  width: 35px;
+  top: 10px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
   color: black;
-  border: 2px solid #b6b6b6;
-  background-color: white;
-  border-radius: 100px;
+  border: none;
+  background: transparent;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .close-one, .close-two{
-  width: 23px;
-  height: 2px;
+  width: 30px;
+  height: 3px;
   background-color: #b6b6b6;
   display: block;
 }

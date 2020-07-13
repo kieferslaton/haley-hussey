@@ -1,5 +1,6 @@
 import React from 'react'
 import {graphql, Link, useStaticQuery} from 'gatsby'
+import sunflower from '../images/flower.png'
 
 const MainMenu = () => {
     const data = useStaticQuery(graphql`
@@ -29,7 +30,7 @@ const MainMenu = () => {
     }))
     return(
         <nav className="navbar navbar-light navbar-expand-md py-1">
-            <Link to="/"><a className="navbar-brand">haley hussey</a></Link>
+            <Link to="/"><a className="navbar-brand"><span style={{zIndex: 1000}}>haley hussey</span><img src={sunflower} style={{height: 35, width: 35, margin: 0, padding: 0, position: 'relative', top: -3, left: 2, zIndex: -1000}}/></a></Link>
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar">
                <span class="icon-bar top-bar"></span>
                <span class="icon-bar middle-bar"></span>

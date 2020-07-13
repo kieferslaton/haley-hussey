@@ -44,6 +44,7 @@ const Gallery = () => {
                 backgroundImage: `url(${image.featuredImage.sourceUrl})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                cursor: "pointer"
               }}
             ></div>
           ))}

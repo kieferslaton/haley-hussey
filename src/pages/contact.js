@@ -4,7 +4,6 @@ import * as emailjs from "emailjs-com"
 
 import Layout from "../components/layout"
 import SEO from '../components/seo'
-import apiConfig from '../apikeys'
 
 function Contact() {
   const [form, setForm] = useState({
@@ -29,8 +28,8 @@ function Contact() {
     }
 
     let service_id = "default_service"
-    let template_id = apiConfig.emailJsTemplate
-    let user_id = apiConfig.emailJsUser
+    let template_id = process.env.GATSBY_EMAIL_TEMPLATE
+    let user_id = process.env.GATSBY_EMAIL_USER
 
     emailjs.send(service_id, template_id, templateParams, user_id).then(
       function (response) {
