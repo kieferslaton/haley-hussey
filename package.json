@@ -19,7 +19,7 @@
     "gatsby-plugin-styled-components": "^3.3.4",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-source-graphql": "^2.5.4",
-    "gatsby-source-wordpress": "^3.3.11",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-sharp": "^2.5.5",
     "graphql-tag": "^2.10.3",
     "jquery": "^3.5.1",
